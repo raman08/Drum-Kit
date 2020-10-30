@@ -59,3 +59,17 @@ kbd {
 	letter-spacing: .1%;
 	color: #161614;
 }
+
+footer{
+	display: block;
+	width: 100%;
+}
+
+.footer {
+	padding: 1rem 0;
+	text-align: center;
+	font-size: 120%;
+	font-weight: bolder;
+	color: #edfd08;
+
+}

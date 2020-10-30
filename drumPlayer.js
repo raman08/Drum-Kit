@@ -42,4 +42,3 @@ const keys = document.querySelectorAll('.key');
 
 // Looping to all the keys and removing the transition if there is any
 keys.forEach(key => key.addEventListener('transitionend', removeTransition))
-
