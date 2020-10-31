@@ -49,7 +49,7 @@ kbd {
 
 @font-face {
 	font-family: jazz-font;
-	src: url("Font/Cooljazz.ttf");
+	src: url("../Font/Cooljazz.ttf");
 }
 
 .sound {
