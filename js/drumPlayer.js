@@ -7,18 +7,22 @@ function playSound(e) {
 	// Finding the key element.
 	const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
+	const head = document.querySelector(".head");
+
+
 	// If there is no audio element associated with the key process then return.
 	if (!audio)
 		return;
 
 	//Revind the audio to the start.
-	audio.currentTime = 0
+	audio.currentTime = 0;
 
 	//Playing the audio element.
 	audio.play();
 
 	//Adding the transition effect to the keys
-	key.classList.add('playing')
+	key.classList.add('playing');
+	head.classList.add('playing_head');
 
 }
 
@@ -29,8 +33,11 @@ function removeTransition(e) {
 	if (e.propertyName !== 'transform')
 		return;
 
+	const head = document.querySelector(".head");
+
 	// Removing the transformation
-	this.classList.remove('playing')
+	this.classList.remove('playing');
+	head.classList.remove('playing_head')
 
 }
 

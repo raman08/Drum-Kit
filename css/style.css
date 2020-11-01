@@ -11,6 +11,26 @@ body, html {
 	font-family: sans-serif;
 }
 
+
+
+h1{
+	text-align: center;
+	font-size: 500%;
+	font-family: "jazz-font";
+	color: #f7e709;
+	border: solid #dada37;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	transition: all .09s ease;
+}
+
+.playing_head {
+	transform: scale(1.8);
+	border-color: #c7bb0f;
+	box-shadow: 0 0 1rem #292928;
+}
+
 .keys {
 	display: flex;
 	flex: 1;
@@ -18,6 +38,7 @@ body, html {
 	min-width: 50vw;
 	align-items: center;
 	justify-content: center;
+	margin-top: -10%;
 }
 
 .key {
@@ -60,16 +81,21 @@ kbd {
 	color: #161614;
 }
 
-footer{
-	display: block;
+footer {
+	position: fixed;
 	width: 100%;
+	bottom: 0pt;
+	left: 0pt;
+
+	background-color: #292928;
 }
 
-.footer {
-	padding: 1rem 0;
+.footer_contents {
 	text-align: center;
 	font-size: 150%;
 	font-weight: bolder;
-	color: #edfd08;
+	color: #d0d338ef;
+	text-align: center;
+	justify-content: center;
 	font-family: "jazz-font";
 }
