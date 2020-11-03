@@ -7,8 +7,6 @@ function playSound(e) {
 	// Finding the key element.
 	const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 
-	const head = document.querySelector(".head");
-
 
 	// If there is no audio element associated with the key process then return.
 	if (!audio)
@@ -22,8 +20,6 @@ function playSound(e) {
 
 	//Adding the transition effect to the keys
 	key.classList.add('playing');
-	head.classList.add('playing_head');
-
 }
 
 //Function to remove transition
@@ -37,8 +33,6 @@ function removeTransition(e) {
 
 	// Removing the transformation
 	this.classList.remove('playing');
-	head.classList.remove('playing_head')
-
 }
 
 //Finding the audio element associated with the key precess.
